@@ -1,0 +1,243 @@
+@import url("https://fonts.google.com/specimen/Inter");
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html
+{
+	width: 100%;
+	height: 100%;
+}
+body
+{
+	width: 100%;
+	height: 100%;
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	background-color: hsl(230, 17%, 14%);
+}
+
+/* HEADER */
+
+header
+{
+	width: 100%;
+	height: 40%;
+	padding: 2rem 10rem 0 10rem;
+	background-color: hsl(232, 19%, 15%);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+/* LOGO */
+
+header .logo p
+{
+	color: white;
+	font-size: 200%;
+}
+header .logo span
+{
+	color: hsl(228, 34%, 66%);
+}
+
+/* LOGO */
+/* SWITCH */
+
+header .switch
+{
+	color: hsl(228, 34%, 66%);
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	height: fit-content;
+}
+header .switch .switch-box
+{
+	width: 5rem;
+	height: 2.5rem;
+	background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+	border-radius: 50px;
+	position: relative;
+}
+header .switch .switch-box .trigger
+{
+	position: absolute;
+	height: 2rem;
+	width: 2rem;
+	border-radius: 50%;
+	background-color: hsl(232, 19%, 15%);
+	transform: translate(12%, 12%);
+	transition: 0.1s;
+}
+header .switch .switch-box .trigger:hover
+{
+	cursor: pointer;
+}
+header .switch .switch-box .trigger-active
+{
+	transform: translate(135%, 12%);
+}
+
+/* SWITCH */
+/* HEADER */
+
+/* SECTION */
+
+section
+{
+	width: 100%;
+	height: 30%;
+	padding: 0 10rem 0 10rem;
+	margin-top: -12.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 6.5rem;
+}
+section .container
+{
+	width: 20%;
+	height: 100%;
+	background-color: hsl(228, 28%, 20%);
+	display: flex;
+	padding: 2rem 0 2rem 0;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+section .container:hover
+{
+	cursor: pointer;
+	background-color: #576686;
+}
+section .first::before
+{
+	margin-top: -2rem;
+	content: "";
+	width: 100%;
+	height: 5px;
+	background-color: hsl(208, 92%, 53%);
+}
+section .second::before
+{
+	margin-top: -2rem;
+	content: "";
+	width: 100%;
+	height: 5px;
+	background-color: hsl(203, 89%, 53%);
+}
+section .third::before
+{
+	margin-top: -2rem;
+	content: "";
+	width: 100%;
+	height: 5px;
+	background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+section .forth::before
+{
+	margin-top: -2rem;
+	content: "";
+	width: 100%;
+	height: 5px;
+	background-color: hsl(348, 97%, 39%);
+}
+section .container .user
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.5rem;
+	color: hsl(228, 34%, 66%);
+}
+section .container .number
+{
+	color: white;
+	font-size: 350%;
+}
+section .container .followers
+{
+	color: white;
+	font-size: 110%;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	color: hsl(228, 34%, 66%);
+}
+section .container .amount
+{
+	color: green;
+	font-size: 105%;
+	font-weight: 900;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+/* SECTION */
+/* MAIN */
+
+.main-description
+{
+	color: white;
+	padding: 2rem 10rem 2rem 10rem;
+	font-size: 150%;
+}
+main
+{
+	width: 100%;
+	height: 30%;
+	padding: 0 10rem 0 10rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 6.66rem;
+	justify-content: space-evenly;
+}
+main .container
+{
+	width: 20%;
+	height: 40%;
+	background-color: hsl(228, 28%, 20%);
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+main .container:hover
+{
+	cursor: pointer;
+	background-color: #576686;
+}
+main .container .header
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: hsl(228, 34%, 66%);
+}
+main .container .footer
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+main .container .footer .number
+{
+	color: white;
+	font-size: 150%;
+}
+main .container .footer .stats
+{
+	display: flex;
+	justify-content: space-between;
+	color: green;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* MAIN */

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="dark-styles.css" />
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <script></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <p>Social Media Dashboard</p>
+      <span>Total Followers: 23,004</span>
+    </div>
+    <div class="switch">
+      <div class="text">
+        Dark Mode
+      </div>
+      <div class="switch-box">
+        <div class="trigger">
+        </div>
+        <script type="text/javascript">
+          document.querySelector(".trigger").addEventListener("click", function()
+          {
+            document.querySelector(".trigger").classList.toggle("trigger-active");
+            if(document.querySelector(".trigger").classList.contains("trigger-active"))
+            {
+              document.querySelector("link[rel='stylesheet']").setAttribute("href","light-styles.css");
+              console.log("Done!");
+            }
+            else
+            {
+              document.querySelector("link[rel='stylesheet']").setAttribute("href","dark-styles.css");
+              console.log("Done!");
+            }
+          });
+        </script>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container first">
+      <div class="user">
+        <img src="images/icon-facebook.svg" alt="icon" />
+        <span>@nathanf</span>
+      </div>
+      <div class="number">
+        1987
+      </div>
+      <div class="followers">
+        Followers
+      </div>
+      <div class="amount">
+        <img src="images/icon-up.svg" alt="icon" />
+        12 Today
+      </div>
+    </div>
+    <div class="container second">
+      <div class="user">
+        <img src="images/icon-twitter.svg" alt="icon" />
+        <span>@nathanf</span>
+      </div>
+      <div class="number">
+        1044
+      </div>
+      <div class="followers">
+        Followers
+      </div>
+      <div class="amount">
+        <img src="images/icon-up.svg" alt="icon" />
+        99 Today
+      </div>
+    </div>
+    <div class="container third">
+      <div class="user">
+        <img src="images/icon-instagram.svg" alt="icon" />
+        <span>@realnathanf</span>
+      </div>
+      <div class="number">
+        11k
+      </div>
+      <div class="followers">
+        Followers
+      </div>
+      <div class="amount">
+        <img src="images/icon-up.svg" alt="icon" />
+        1099 Today
+      </div>
+    </div>
+    <div class="container forth">
+      <div class="user">
+        <img src="images/icon-youtube.svg" alt="icon" />
+        <span>Nathan F.</span>
+      </div>
+      <div class="number">
+        8239
+      </div>
+      <div class="followers">
+        Subscribers
+      </div>
+      <div class="amount">
+        <img src="images/icon-down.svg" alt="icon" />
+        <span style="color: red;">144 Today</span>
+      </div>
+    </div>
+  </section>
+  <div class="main-description">
+    Overview - Today
+  </div>
+  <main>
+    <div class="container">
+      <div class="header">
+        Page Views
+        <img src="images/icon-facebook.svg" alt="icon" />
+      </div>
+      <div class="footer">
+        <div class="number">
+          87
+        </div>
+        <div class="stats">
+          <img src="images/icon-up.svg" alt="icon" />3%
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        Likes
+        <img src="images/icon-facebook.svg" alt="icon" />
+      </div>
+      <div class="footer">
+        <div class="number">
+          52
+        </div>
+        <div class="stats" style="color: red;">
+          <img src="images/icon-down.svg" alt="icon" />2%
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        Likes
+        <img src="images/icon-instagram.svg" alt="icon" />
+      </div>
+      <div class="footer">
+        <div class="number">
+          5462
+        </div>
+        <div class="stats">
+          <img src="images/icon-up.svg" alt="icon" />2257%
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        Profile Views
+        <img src="images/icon-instagram.svg" alt="icon" />
+      </div>
+      <div class="footer">
+        <div class="number">
+          52k
+        </div>
+        <div class="stats">
+          <img src="images/icon-up.svg" alt="icon" />1375%
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        Retweets
+        <img src="images/icon-twitter.svg" alt="icon" />
+      </div>
+      <div class="footer">
+        <div class="number">
+          117
+        </div>
+        <div class="stats">
+          <img src="images/icon-up.svg" alt="icon" />303%
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        Likes
+        <img src="images/icon-twitter.svg" alt="icon" />
+      </div>
+      <div class="footer">
+        <div class="number">
+          507
+        </div>
+        <div class="stats">
+          <img src="images/icon-up.svg" alt="icon" />553%
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        Likes
+        <img src="images/icon-youtube.svg" alt="icon" />
+      </div>
+      <div class="footer">
+        <div class="number">
+          107
+        </div>
+        <div class="stats" style="color: red;">
+          <img src="images/icon-down.svg" alt="icon" />19%
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="header">
+        Total Views
+        <img src="images/icon-youtube.svg" alt="icon" />
+      </div>
+      <div class="footer">
+        <div class="number">
+          1407
+        </div>
+        <div class="stats" style="color: red;">
+          <img src="images/icon-down.svg" alt="icon" />12%
+        </div>
+      </div>
+    </div>  
+  </main>
+</body>
+</html>
